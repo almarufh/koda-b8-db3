@@ -1,4 +1,4 @@
-SELECT "m"."name", "mg"."genre", "d"."first_name", "d"."last_name" FROM "movies" "m"
+SELECT "m"."name" AS "Movies", "mg"."genre" AS "Genre", "d"."first_name" AS "Director" FROM "movies" "m"
 JOIN "movies_directors" "md" ON "m"."id" = "md"."movie_id"  
 JOIN "directors" "d" ON "d"."id" = "md"."director_id"
 JOIN "movies_genres" "mg" ON "m"."id" = "mg"."movie_id"
